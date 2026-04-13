@@ -4,10 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orion Studio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Basic reset and layout */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #0d1117, #1f2937);
+      color: #e5e7eb;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00bfff;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #00bfff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0284c7;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to Orion Studio</h1>
-  <p>Your site is working!</p>
+  <p>Your creative space is live and ready.</p>
+  <button class="btn">Explore Projects</button>
+  <footer>© 2026 Orion Studio</footer>
 </body>
 </html>
