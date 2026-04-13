@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Orion Studio</title>
   <style>
-    /* Basic reset and layout */
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Segoe UI', Arial, sans-serif;
@@ -14,16 +13,42 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      min-height: 100vh;
+    }
+
+    /* Navigation bar */
+    nav {
+      width: 100%;
+      background-color: #111827;
+      padding: 1rem 0;
+      display: flex;
       justify-content: center;
-      height: 100vh;
+      gap: 2rem;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    /* Main content */
+    main {
       text-align: center;
+      margin-top: 10vh;
     }
 
     h1 {
       font-size: 3rem;
       color: #00bfff;
       margin-bottom: 0.5rem;
-      letter-spacing: 1px;
     }
 
     p {
@@ -32,33 +57,27 @@
       margin-bottom: 2rem;
     }
 
-    .btn {
-      background-color: #ae00ff;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #0284c7;
-    }
-
     footer {
-      position: absolute;
-      bottom: 20px;
+      margin-top: auto;
+      padding: 1rem;
       font-size: 0.9rem;
       color: #6b7280;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Orion Studio</h1>
-  <p>Your creative space is live and ready.</p>
-  <button class="btn">Explore Projects</button>
+  <nav>
+    <a href="https://masonsmith4.github.io/portfolio/">GitHub Pages</a>
+    <a href="#projects">Projects</a>
+    <a href="#summary">Personal Summary</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <h1>Welcome to Orion Studio</h1>
+    <p>Your creative space is live and ready.</p>
+  </main>
+
   <footer>© 2026 Orion Studio</footer>
 </body>
 </html>
